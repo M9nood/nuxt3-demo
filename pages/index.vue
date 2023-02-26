@@ -1,20 +1,10 @@
 <template>
     <div>
-        <LabelTitle>Welcome Nuxt3.</LabelTitle>
-        <LabelTimer :timer="timer.time"></LabelTimer>
-        <a @click="reload" class="btn">Refresh Data</a>
-        <pre>{{ resData }}</pre>
+        <h1>Welcome Nuxt3.</h1>
     </div>
 </template>
 
 <script setup lang="ts">
-const timer = useTimer()
-
-const { data: resData, refresh: refreshMe} = await useFetch('/api/me')
-
-function reload(){
-    refreshMe()
-}
 
 </script>
 
