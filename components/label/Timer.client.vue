@@ -4,6 +4,6 @@
 
 <script setup lang="ts">
 defineProps({
-    timer: ref<String>
+    timer: { type: [ref<String>, Object] }
 })
 </script>
